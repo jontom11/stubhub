@@ -5,7 +5,7 @@ Many times I want to find events based on lowest price and this is my journey to
 This app requires two servers running simultaneously. 
 First will be for the client and second will be for the server.
 
-* Be sure to be in the root folder of Stubhub and Run `yarn start` on the command line
+* Be in the root folder of stubhub and Run `yarn start` on the command line
 * Open another terminal tab, cd into stubhub/server folder and run `yarn start`
 
 Step one will start the client on `localhost:3000` and download node_modules for the client. 
