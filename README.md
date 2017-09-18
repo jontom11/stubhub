@@ -2,13 +2,15 @@ This application was built to Easily pull Stubhub Events.
 Many times I want to find events based on lowest price and this is my journey to developing it. 
 
 ## How to Run
-This app requires two servers running simultaneously. First will be for the client and second will be for the server.
+This app requires two servers running simultaneously. 
+First will be for the client and second will be for the server.
 
-* Be sure to be in the root folder of Stubhub and Run 'yarn start' on the command line
-* Open another terminal tab, cd into stubhub/server folder and run 'yarn start' 
+* Be sure to be in the root folder of Stubhub and Run `yarn start` on the command line
+* Open another terminal tab, cd into stubhub/server folder and run `yarn start`
 
-Step one will start the client on localhost:3000 and download node_modules for the client. 
-Step two will start the server on localhost:3001 and download node_modules for the server.
+Step one will start the client on `localhost:3000` and download node_modules for the client. 
+
+Step two will start the server on `localhost:3001` and download node_modules for the server.
 
 ## Updating to New Releases
 
