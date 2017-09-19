@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import axios from 'axios';
 
 class App extends Component {
   constructor() {
@@ -14,17 +15,13 @@ class App extends Component {
   }
 
   componentDidMount() {
-    fetch('/users')
-    .then(res => res.json())
-    .then(users => this.setState({ users }));
+    axios.get('/users')
+    .then(users => this.setState({ users: users.data }));
   }
 
   clickButtonHandler() {
-    // console.log(this.state.users)
-    fetch('/api')
-    .then(res => res.json())
-    .then(api => this.setState({ data: api.events }))    
-    // .then(api => console.log(api.numFound, api.events))
+    axios.get('/api')
+    .then(res => this.setState({ data: res.data.events }))    
   }
 
   render() {
