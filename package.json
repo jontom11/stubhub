@@ -10,7 +10,7 @@
     "react-scripts": "1.0.13"
   },
   "scripts": {
-    "start":"node server/server.js", 
+    "start":"node ./server/server.js", 
     "react": "react-scripts start",
     "heroku-postbuild": "yarn --production=false && yarn run build",
     "build": "react-scripts build",
